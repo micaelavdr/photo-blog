@@ -1,7 +1,7 @@
 {
   "name": "photoblog",
   "scripts": {
-    "postinstall": "npm run build",
+    "postinstall": "npm run build && ng build --aot -prod",
     "serve": "webpack-dev-server --config config/develop.config.js --inline --progress --port 8080",
     "build": "webpack"
   },
@@ -15,7 +15,8 @@
     "core-js": "2.4.1",
     "ie-shim": "0.1.0",
     "rxjs": "5.0.3",
-    "zone.js": "0.7.4"
+    "zone.js": "0.7.4",
+    "angular-cli" : "1.0.0-beta.22-1"
   },
   "devDependencies": {
     "@types/core-js": "0.9.35",
